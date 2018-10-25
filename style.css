@@ -1,0 +1,41 @@
+html {
+    font-family:'Roboto', sans-serif;
+    background-image: url("image/back.jpg");
+    display:flex;
+    flex-direction:column;
+}
+img {
+    height:80%;
+    width:auto;
+}
+h1 {
+    text-align:center;
+    color:white;
+}
+#quiJoue {
+    border:1px solid #984843;
+    width:50%;
+    margin-bottom:2%;
+    background-color:white;
+}
+#plateau {
+    display:flex;
+    flex-direction:column;
+    margin-left:10%;
+    margin-right:10%;
+    margin-bottom:2%;
+}
+td {
+    padding:0;   
+}
+#perduGagne{
+    text-align:center;
+    border:1px solid #984843;
+    width:50%;
+    margin:auto;
+    margin-top:2%;
+    background-color:white;
+}
+footer {
+    visibility:hidden;
+}
