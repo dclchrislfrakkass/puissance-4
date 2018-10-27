@@ -1,44 +1,79 @@
 html {
     font-family:'Roboto', sans-serif;
     background-image: url("image/back.jpg");
-    display:flex;
-    flex-direction:column;
+    height: 100%;
+    width: 100%;
 }
-img {
-    height:80%;
-    width:auto;
+BODY {
+    font-family: 'Open Sans', sans-serif;
+    color: white;
+    text-align: center;
+    width: 90%;
+    height: 50%;
 }
 h1 {
     text-align:center;
-    color:white;
+    color: #FFFFFF;
+    text-shadow: 0 -1px 4px #FFF, 0 -2px 10px #ff0, 0 -10px 20px #ff8000, 0 -18px 40px #F00;
 }
-#quiJoue {
-    border:1px solid #984843;
-    width:50%;
+
+#colorTurn {
+    font-size: 1.5em;
+    border:2px solid #984843;
+    width:75%;
     margin-bottom:2%;
-    background-color:white;
+    margin-left: 0.2vw;
 }
-#plateau {
-    display:flex;
-    flex-direction:column;
-    margin-left:10%;
-    margin-right:10%;
-    margin-bottom:2%;
+#grid {
+    margin: 20px auto;
+    display: table;
+    width: 100%;
+    height: 100%;;
+    padding: 2%;
+    background: rgb(11, 24, 63);
+    border: 1px solid #0044AA;
+    border-radius: 5px;
+    box-shadow: 0 1px 3px rgba(0, 0, 0, 0.5);
+    -moz-box-shadow: 0 1px 3px rgba(0, 0, 0, 0.5);
+    -webkit-box-shadow: 0 1px 3px rgba(0, 0, 0, 0.5);
+    border-spacing: 5px 5px;
 }
-td {
-    padding:0;
-    border:1px solid white;
-    width:13vw;
-    height:9vh;
+
+.row {
+    display: table-row;
 }
-#perduGagne{
+
+.cell {
+    display: table-cell;
+    background-color: #FFFFFF;
+    width: 7vmax;
+    height: 7vmax;
+    -webkit-border-radius: 50%;
+    -moz-border-radius: 50%;
+    border-radius: 50%;
+    margin: 2px;
+}
+
+#winLose{
     text-align:center;
-    border:1px solid #984843;
-    width:50%;
+    border:2px solid #984843;
+    width:60%;
+    height: 1.5em;
+    font-size: 2m;
     margin:auto;
     margin-top:2%;
-    background-color:white;
+    /* background-color:white; */
 }
+
 footer {
-    visibility:hidden;
+    /*visibility:hidden;*/
+    display: flex;
+    flex-direction: row;
+    justify-content: flex-end;
 }
+#resetButton {
+   
+    margin-right: 1vw;
+    
+}
+

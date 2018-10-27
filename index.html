@@ -5,111 +5,87 @@
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <meta http-equiv="X-UA-Compatible" content="ie=edge">
     <link rel="stylesheet" href="style.css">
-    <title>puissance4VersionDiv</title>
+    <title>puissance 4 version Table</title>
 </head>
 <body>
-    <h1>Puissance 4</h1>
-    <div id="quiJoue">
-        <p>Joueur 1 doit jouer</p>
-    </div>
-    <div id="pions">    
-        <div id="pionsJ1">
+    <h1>PUISSANCE 4</h1>
+    <div id="colorTurn">Tour : Joueur 1</div>
+    <div id="grid">
+        <div class="row">
+            <div class="cell" id="cell00" onclick="selectColumn(0)"></div>
+            <div class="cell" id="cell01" onclick="selectColumn(1)"></div>
+            <div class="cell" id="cell02" onclick="selectColumn(2)"></div>
+            <div class="cell" id="cell03" onclick="selectColumn(3)"></div>
+            <div class="cell" id="cell04" onclick="selectColumn(4)"></div>
+            <div class="cell" id="cell05" onclick="selectColumn(5)"></div>
+            <div class="cell" id="cell06" onclick="selectColumn(6)"></div>
         </div>
-        <div id="pionsJ2">
+        <div class="row">  
+            <div class="cell" id="cell10" onclick="selectColumn(0)"></div>
+            <div class="cell" id="cell11" onclick="selectColumn(1)"></div>
+            <div class="cell" id="cell12" onclick="selectColumn(2)"></div>
+            <div class="cell" id="cell13" onclick="selectColumn(3)"></div>
+            <div class="cell" id="cell14" onclick="selectColumn(4)"></div>
+            <div class="cell" id="cell15" onclick="selectColumn(5)"></div>
+            <div class="cell" id="cell16" onclick="selectColumn(6)"></div>
         </div>
-        
-        
+        <div class="row">  
+            <div class="cell" id="cell20" onclick="selectColumn(0)"></div>
+            <div class="cell" id="cell21" onclick="selectColumn(1)"></div>
+            <div class="cell" id="cell22" onclick="selectColumn(2)"></div>
+            <div class="cell" id="cell23" onclick="selectColumn(3)"></div>
+            <div class="cell" id="cell24" onclick="selectColumn(4)"></div>
+            <div class="cell" id="cell25" onclick="selectColumn(5)"></div>
+            <div class="cell" id="cell26" onclick="selectColumn(6)"></div>
+        </div>
+        <div class="row">  
+            <div class="cell" id="cell30" onclick="selectColumn(0)"></div>
+            <div class="cell" id="cell31" onclick="selectColumn(1)"></div>
+            <div class="cell" id="cell32" onclick="selectColumn(2)"></div>
+            <div class="cell" id="cell33" onclick="selectColumn(3)"></div>
+            <div class="cell" id="cell34" onclick="selectColumn(4)"></div>
+            <div class="cell" id="cell35" onclick="selectColumn(5)"></div>
+            <div class="cell" id="cell36" onclick="selectColumn(6)"></div>
+        </div>
+        <div class="row">
+            <div class="cell" id="cell40" onclick="selectColumn(0)"></div>
+            <div class="cell" id="cell41" onclick="selectColumn(1)"></div>
+            <div class="cell" id="cell42" onclick="selectColumn(2)"></div>
+            <div class="cell" id="cell43" onclick="selectColumn(3)"></div>
+            <div class="cell" id="cell44" onclick="selectColumn(4)"></div>
+            <div class="cell" id="cell45" onclick="selectColumn(5)"></div>
+            <div class="cell" id="cell46" onclick="selectColumn(6)"></div>
+        </div>
+        <div class="row">
+            <div class="cell" id="cell50" onclick="selectColumn(0)"></div>
+            <div class="cell" id="cell51" onclick="selectColumn(1)"></div>
+            <div class="cell" id="cell52" onclick="selectColumn(2)"></div>
+            <div class="cell" id="cell53" onclick="selectColumn(3)"></div>
+            <div class="cell" id="cell54" onclick="selectColumn(4)"></div>
+            <div class="cell" id="cell55" onclick="selectColumn(5)"></div>
+            <div class="cell" id="cell56" onclick="selectColumn(6)"></div>
+        </div>
+        <div class="row">
+            <div class="cell" id="cell60" onclick="selectColumn(0)"></div>
+            <div class="cell" id="cell61" onclick="selectColumn(1)"></div>
+            <div class="cell" id="cell62" onclick="selectColumn(2)"></div>
+            <div class="cell" id="cell63" onclick="selectColumn(3)"></div>
+            <div class="cell" id="cell64" onclick="selectColumn(4)"></div>
+            <div class="cell" id="cell65" onclick="selectColumn(5)"></div>
+            <div class="cell" id="cell66" onclick="selectColumn(6)"></div>
+        </div>
     </div>
-    <div id="plateau">
-        <table id="myTable">
-            <tbody><tr id="col1" >
-                <td id="truc"></td> 
-                <td id="1:2"></td>  
-                <td id="1:3"></td>
-                <td id="1:4"></td>
-                <td id="1:5"></td>
-                <td id="1:6" ></td>
-                <td id="1:7"></td>
-            </tr>
-            <tr id="col2">
-                <td  id="2:1"></td>
-                <td  id="2:2"></td>
-                <td  id="2:3"></td>
-                <td id="2:4"></td>
-                <td id="2:5"></td>
-                <td id="2:6"></td>s
-                <td id="2:7"></td>
-            </tr>
-            <tr id="col3">
-            <td  id="3:1"></td>
-            <td id="3:2"> </td>
-            <td id="3:3"></td>
-            <td id="3:4"></td>
-            <td id="3:5"></td>
-            <td id="3:6"></td>
-            <td id="3:7"></td>
-        </tr>
-        <tr id="col4">
-            <td  id="4:1"></td>
-            <td id="4:2"></td>
-            <td id="4:3"></td>
-            <td id="4:4"></td>
-            <td id="4:5"></td>
-            <td id="4:6"></td>
-            <td id="4:7"></td>
-        </tr>
-        <tr id="col5">
-            <td id="5:1"></td>
-            <td id="5:2"></td>
-            <td id="5:3"></td>
-            <td id="5:4"></td>
-            <td id="5:5"></td>
-            <td id="5:6"></td>
-            <td id="5:7"></td>
-        </tr>
-        <tr id="col6">
-            <td  id="6:1"></td> 
-            <td  id="6:2"></td>
-            <td  id="6:3"></td>
-            <td   id="6:4"></td>
-            <td  id="6:5"></td>
-            <td  id="6:6"></td>
-            <td id="6:7"></td>
-        </tr>
-        <tr id="col7">
-            <td  id="7:1"></td> 
-            <td id="7:2"></td>
-            <td id="7:3"></td>
-            <td  id="7:4"></td>
-            <td id="7:5"></td>
-            <td id="7:6"></td>
-            <td id="7:7"></td>
-        </tr>
-    </tbody>
-</table>
-</div>
-<div id="perduGagne">
-    <p>Perdus</p>
-</div>
+    
+    <div id="winLose">
+        Bon Jeu !
 
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-<footer>
-    Rejouer
-</footer>
-<script src="script.js"></script>
+    </div>
+    
+    
+    
+    <footer>
+        <input id="resetButton" type="button" value="Rejouer ?" onclick="refreshGrid()" /><br><br>
+    </footer>
+    <script src="script.js"></script>
 </body>
 </html>
