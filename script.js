@@ -129,7 +129,12 @@ function displayPlay() {
 	
 	function endGame(winner) {
 		gameActive = false; 
-		document.getElementById('winLose').innerHTML = "Gagnant: " + winner; //set the winning player
+		document.getElementById('winLose').innerHTML = "Joueur gagnant: joueur " + winner; //set the winning player
+		if (player == 1){
+			document.getElementById("winLose").style.color="red";
+		} else {
+			document.getElementById("winLose").style.color="yellow";
+		}
 	}
 	
 	
