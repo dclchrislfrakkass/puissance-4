@@ -90,7 +90,6 @@ function drawBoard() {
 		// look if a player win and who's winning
 		function lookForWin() {
 			if (turn == 48){
-				lookForWin();
 				//console.log("nul");
 				document.getElementById('winLose').innerHTML = "Plus de cases";
 				// Get the modal
